@@ -1,0 +1,72 @@
+// Make existing home icon transparent
+.wrapper-1BJsBx[data-list-item-id="guildsnav___home"] .childWrapper-anI2G9 {
+    background-color: transparent;
+}
+.homeIcon-tEMBK1 path, .circleIconButton-jET_ig path {
+    fill: transparent;
+}
+
+// Blue color
+.wrapper-1BJsBx[data-list-item-id="guildsnav___home"], .circleIconButton-jET_ig {
+    filter: brightness(8) hue-rotate(160deg) saturate(6);
+    transition: all 0.2s;
+}
+
+// White on hover
+.wrapper-1BJsBx[data-list-item-id="guildsnav___home"]:hover, .circleIconButton-jET_ig:hover {
+    filter: brightness(10);
+    background-color: transparent;
+}
+
+// Home icon
+.homeIcon-tEMBK1 {
+    background: url("https://raw.githubusercontent.com/Xerousso/JennyCord/master/assets/home.svg");
+    background-repeat: no-repeat;
+    position: center;
+    width: 35px;
+    height: 35px;
+    margin-top: 20px;
+}
+
+// Discovery and add server background settings
+.circleIconButton-jET_ig {
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    position: center;
+    margin-top: 0px;
+}
+
+// Add server background
+.circleIconButton-jET_ig[data-list-item-id="guildsnav___create-join-button"] svg {
+    background: url("https://raw.githubusercontent.com/Xerousso/JennyCord/master/assets/plus.svg");
+    width: 30px;
+    height: 30px;
+}
+
+// Discovery background
+.circleIconButton-jET_ig[data-list-item-id="guildsnav___guild-discover-button"] svg {
+    background: url("https://raw.githubusercontent.com/Xerousso/JennyCord/master/assets/compass.svg");
+    width: 35px;
+    height: 35px;
+}
+
+// Reoder buttons so that discovery and add server are above server list
+.scroller-2TZvBN {
+    display: flex;
+    flex-flow: column;
+}
+.scroller-2TZvBN .tutorialContainer-SGrQ1h {
+    order: -1;
+}
+.scroller-2TZvBN .listItem-2P_4kh {
+    order: -2;
+}
+.scroller-2TZvBN .tutorialContainer-1v44GL {
+    order: -2;
+}
+
+// Remove guild separator line; line appears directly under home button, with discovery icon now below it no longer separates servers but rather the home 
+// and discovery buttons, which is not useful
+.guildSeparator-3s64Iy {
+    display: none;
+}
