@@ -1,0 +1,8 @@
+{
+    "name": "JennyCord",
+    "version": "1",
+    "license": "MIT",
+    "theme": "theme.scss",
+    "author": "Jenny#0002",
+    "description": "A fresh, modern, cool and sleek Discord theme."
+}
