@@ -11,6 +11,10 @@ To disable certain things here, you can comment out the line. To do so, simply a
 // Comment out this line if you do not want the home, add server and discovery buttons in the server list to change.
 @use "icons.scss";
 
+// Comment out this line if you do not want the message box to change.
+@use "message_box.scss";
+
+// Rest of the theme source code, for stuff like channel indicators
 @use "source.scss";
 
 // Comment out this line if you do not want to replace the title bar on windows.
