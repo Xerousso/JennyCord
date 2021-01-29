@@ -1,3 +1,13 @@
+:root {
+    --scrollbar-thin-thumb: var(--scrollbar-thumb);
+    --scrollbar-thin-track: transparent;
+    --scrollbar-auto-thumb: var(--scrollbar-thumb);
+    --scrollbar-auto-track: var(--scrollbar-track);
+    --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-thumb);
+    --scrollbar-auto-scrollbar-color-track: var(--scrollbar-track);
+    --background-floating: var(--background-secondary-alt);
+}
+
 // Make header square (i.e. not rounded)
 .sidebar-2K8pFh {
     border-radius: 0px !important;
@@ -5,12 +15,14 @@
 
 // Add border line
 .container-1taM1r:not(.hasBanner-2SrLR3) .header-2V-4Sw, .animatedContainer-1NSq4T, .searchBar-6Kv8R2, .title-3qD0b- {
-    border-bottom: 3px var(--accent) solid !important;
+    border-bottom: 3px var(--accent-primary) solid !important;
+    box-sizing: border-box;
+    background-color: var(--background-secondary-alt);
 }
 
 // Set border line for right side of header to alternate accent color
 .title-3qD0b- {
-    border-color: var(--accent-alt) !important;
+    border-color: var(--accent-secondary) !important;
 }
 
 // Remove discord defauly channel select background
@@ -27,26 +39,25 @@
 
 // Unread channels
 .wrapper-2jXpOf.modeUnread-1qO3K1 {
-    border-color: var(--accent-alt-2) !important;
-    background-color: var(--accent-alt-4);
+    border-color: var(--accent-tertiary) !important;
+    background-color: var(--accent-tertiary-alt);
 }
 
 .wrapper-2jXpOf.modeMuted-onO3r- {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 // Hovered channels (unread or read, not selected)
 .wrapper-2jXpOf:hover {
-    border-color: var(--accent-alt-1) !important;
-    background-color: var(--accent-alt-4);
+    border-color: var(--accent-secondary-alt) !important;
+    background-color: var(--accent-tertiary-alt);
 }
 
 // Selected channel
 .wrapper-2jXpOf.modeSelected-346R90 {
-    border-color: var(--accent) !important;
-    background-color: var(--accent-alt-3);
+    border-color: var(--accent-primary) !important;
+    background-color: var(--accent-tertiary);
 }
-
 
 // Disable default discord unread indicator
 .unread-2lAfLh {
@@ -56,4 +67,33 @@
 // Remove channel padding (replaced by left border from earlier)
 .content-1x5b-n {
     padding-left: 0px;
+}
+
+// Color titlebar with the tertiary background color
+.title-3qD0b- {
+    background-color: var(--background-tertiary) !important;
+}
+
+.mentioned-xhSam7:before {
+    background-color: var(--mentioned-color);
+}
+
+.headerNormal-T_seeN {
+    background-color: var(--card-header) !important;
+}
+
+.body-3iLsc4, .footer-1fjuF6 {
+    background-color: var(--card-body) !important;
+}
+
+.container-1D34oG {
+    background-color: var(--background-primary) !important;
+}
+
+.colorGrey-2DXtkV, .wrapper-3Z-vWm, .card-3Qj_Yx, .footer-2gL1pp {
+    background-color: var(--background-secondary-alt) !important;
+}
+
+.root-1gCeng {
+    background-color: var(--background-secondary) !important;
 }
