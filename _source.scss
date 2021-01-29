@@ -1,0 +1,49 @@
+// Make header square (i.e. not rounded)
+.sidebar-2K8pFh {
+    border-radius: 0px !important;
+}
+
+// Add border line
+.container-1taM1r:not(.hasBanner-2SrLR3) .header-2V-4Sw, .animatedContainer-1NSq4T, .searchBar-6Kv8R2, .title-3qD0b- {
+    border-bottom: 3px var(--accent) solid !important;
+}
+
+// Set border line for right side of header to alternate accent color
+.title-3qD0b- {
+    border-color: var(--accent-alt) !important;
+}
+
+// Remove discord defauly channel select background
+.content-1x5b-n {
+    background-color: transparent !important;
+}
+
+// Add invisible border to all channels (basically used for padding until the border color is changed)
+.wrapper-2jXpOf {
+    border-left: 3px solid !important;
+    border-color: transparent !important;
+    transition: border-color 0.15s, background-color 0.15s;
+}
+
+// Unread channels
+.wrapper-2jXpOf.modeUnread-1qO3K1 {
+    border-color: var(--accent-alt-2) !important;
+    background-color: var(--accent-alt-4);
+}
+
+// Hovered channels (unread or read, not selected)
+.wrapper-2jXpOf:hover {
+    border-color: var(--accent-alt-1) !important;
+    background-color: var(--accent-alt-4);
+}
+
+// Selected channel
+.wrapper-2jXpOf.modeSelected-346R90 {
+    border-color: var(--accent) !important;
+    background-color: var(--accent-alt-3);
+}
+
+// Disable default discord unread indicator
+.unread-2lAfLh {
+    display: none;
+}

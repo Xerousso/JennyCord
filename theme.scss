@@ -11,11 +11,19 @@ To disable certain things here, you can comment out the line. To do so, simply a
 // Comment out this line if you do not want the home, add server and discovery buttons in the server list to change.
 @use "icons.scss";
 
-// Comment out this line if you do not want to make various edges in the theme sharp.
-@use "sharp_edges.scss";
+@use "source.scss";
 
 // Comment out this line if you do not want to replace the title bar on windows.
 @import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
+
+.theme-dark {
+    --accent: rgb(194, 234, 255);
+    --accent-alt: rgba(194, 234, 255, 0.8);
+    --accent-alt-1: rgba(194, 234, 255, 0.4);
+    --accent-alt-2: rgba(194, 234, 255, 0.2);
+    --accent-alt-3: rgba(194, 234, 255, 0.1);
+    --accent-alt-4: rgba(194, 234, 255, 0.025);
+}
 
 .theme-dark {
     --header-primary: #fff;
