@@ -47,3 +47,28 @@
 .unread-2lAfLh {
     display: none;
 }
+
+// Remove channel padding (replaced by left border from earlier)
+.content-1x5b-n {
+    padding-left: 0px;
+}
+
+.channelTextArea-rNsIhG.channelTextArea-2VhZ6z {
+    margin-bottom: 0px;
+    height: 52px;
+
+    .scrollableContainer-2NUZem {
+        border-radius: 0px;
+        height: 52px;
+
+        .inner-MADQqc {
+            padding-top: 4px;
+        }
+    }
+}
+.form-2fGMdU {
+    padding: 0px !important;
+}
+.form-2fGMdU::before {
+    display: none;
+}
