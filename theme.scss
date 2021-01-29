@@ -1,4 +1,20 @@
+/*
+
+To disable certain things here, you can comment out the line. To do so, simply append "// " to the front like so:
+  Original:
+    @use "icons.scss";
+  Commented out:
+    // @use "icons.scss";
+
+*/
+
+// Comment out this line if you do not want the home, add server and discovery buttons in the server list to change.
 @use "icons.scss";
+
+// Comment out this line if you do not want to make various edges in the theme sharp.
+@use "sharp_edges.scss";
+
+// Comment out this line if you do not want to replace the title bar on windows.
 @import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
 
 .theme-dark {
@@ -55,4 +71,3 @@
     --deprecated-text-input-border-disabled: #202225;
     --deprecated-text-input-prefix: #dcddde;
 }
-
