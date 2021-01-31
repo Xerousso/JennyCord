@@ -10,7 +10,7 @@
 
 // Make header square (i.e. not rounded)
 .sidebar-2K8pFh {
-    border-radius: 0px !important;
+    border-radius: 0 !important;
 }
 
 // Add border line
@@ -23,6 +23,7 @@
 // Set border line for right side of header to alternate accent color
 .title-3qD0b- {
     border-color: var(--accent-secondary) !important;
+    background-color: var(--background-tertiary) !important;
 }
 
 // Remove discord defauly channel select background
@@ -66,12 +67,7 @@
 
 // Remove channel padding (replaced by left border from earlier)
 .content-1x5b-n {
-    padding-left: 0px;
-}
-
-// Color titlebar with the tertiary background color
-.title-3qD0b- {
-    background-color: var(--background-tertiary) !important;
+    padding-left: 0;
 }
 
 .mentioned-xhSam7:before {
@@ -96,4 +92,9 @@
 
 .root-1gCeng {
     background-color: var(--background-secondary) !important;
+}
+
+[user_by_bdfdb*="249426653774741505"],
+[data-user-id*="249426653774741505"] {
+    --user-background: url('https://i.imgur.com/5MH84pd.gif');
 }

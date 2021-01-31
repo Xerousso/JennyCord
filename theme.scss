@@ -17,6 +17,8 @@ To disable certain things here, you can comment out the line. To do so, simply a
 // Rest of the theme source code, for stuff like channel indicators
 @use "source.scss";
 
+@use "usrbg.scss";
+
 // Comment out this line if you do not want to replace the title bar on windows.
 @import url("https://gibbu.github.io/BetterDiscord-Themes/addons/windows-titlebar.css");
 
@@ -59,4 +61,45 @@ To disable certain things here, you can comment out the line. To do so, simply a
 
     --card-header: #080a0e;
     --card-body: #10121a;
+}
+
+.theme-light {
+  --accent-primary: rgb(0, 88, 136);
+  --accent-secondary: rgba(0, 88, 136, 0.8);
+  --accent-secondary-alt: rgba(0, 88, 136, 0.5);
+  --accent-tertiary: rgba(0, 88, 136, 0.2);
+  --accent-tertiary-alt: rgba(0, 88, 136, 0.05);
+
+  --header-primary: rgb(7, 7, 10);
+  --header-secondary: #181d24;
+
+  --text-normal: #15212c;
+  --text-muted: #151c27;
+  --text-link: #05688f;
+  --textbox-markdown-syntax: #8e9297;
+
+  --channels-default: #0d1013;
+  --interactive-normal: var(--accent-primary);
+  --interactive-hover: var(--accent-secondary-alt);
+  --interactive-active: rgb(23, 25, 32);
+  --interactive-muted: #4f545c;
+
+  --background-primary: #f4f8ff;
+  --background-secondary: #dfe4f0;
+  --background-secondary-alt: #d1e0ff;
+  --background-tertiary: #bfd1f7;
+
+  --mentioned-color: var(--accent-primary);
+  --background-mentioned: rgba(0, 88, 136, 0.15);
+  --background-mentioned-hover: rgba(0, 88, 136, 0.25);
+
+  --background-message-hover: rgba(0, 0, 0, 0.05);
+
+  --scrollbar-thumb: #cbdcf3;
+  --scrollbar-track: #bdc3dd;
+
+  --channeltextarea-background: var(--background-tertiary);
+
+  --card-header: #ced9f0;
+  --card-body: #eceef7;
 }

@@ -7,14 +7,26 @@
 }
 
 // Blue color
-.wrapper-1BJsBx[data-list-item-id="guildsnav___home"], .circleIconButton-jET_ig {
+.theme-dark .wrapper-1BJsBx[data-list-item-id="guildsnav___home"], .theme-dark .circleIconButton-jET_ig {
     filter: brightness(8) hue-rotate(160deg) saturate(6);
     transition: all 0.2s;
 }
 
 // White on hover
-.wrapper-1BJsBx[data-list-item-id="guildsnav___home"]:hover, .circleIconButton-jET_ig:hover {
+.theme-dark .wrapper-1BJsBx[data-list-item-id="guildsnav___home"]:hover, .theme-dark .circleIconButton-jET_ig:hover {
     filter: brightness(10);
+    background-color: transparent;
+}
+
+// Blue color
+.theme-light .wrapper-1BJsBx[data-list-item-id="guildsnav___home"], .theme-light .circleIconButton-jET_ig {
+    filter: brightness(2.5) hue-rotate(140deg) saturate(10);
+    transition: all 0.2s;
+}
+
+// Black on hover
+.theme-light .wrapper-1BJsBx[data-list-item-id="guildsnav___home"]:hover, .theme-light .circleIconButton-jET_ig:hover {
+    filter: brightness(0);
     background-color: transparent;
 }
 
@@ -33,7 +45,7 @@
     background-color: transparent !important;
     background-repeat: no-repeat;
     position: center;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 // Add server background
@@ -65,7 +77,7 @@
     order: -2;
 }
 
-// Remove guild separator line; line appears directly under home button, with discovery icon now below it no longer separates servers but rather the home 
+// Remove guild separator line; line appears directly under home button, with discovery icon now below it no longer separates servers but rather the home
 // and discovery buttons, which is not useful
 .guildSeparator-3s64Iy {
     display: none;
