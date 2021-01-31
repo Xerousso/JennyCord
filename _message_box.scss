@@ -1,6 +1,7 @@
-.form-2fGMdU { padding: 0px; }
+.form-2fGMdU { padding: 0; }
 .inner-MADQqc { padding-top: 4px; }
-.channelTextArea-rNsIhG { margin-bottom: 0px; }
+.channelTextArea-rNsIhG { margin-bottom: 0; }
+.barButtonMain-3K-jeJ { display: none; }
 
 .base-gE7OpD {
     top: -24px;
@@ -8,6 +9,18 @@
 }
 
 .scrollableContainer-2NUZem {
-    border-radius: 0px;
+    border-radius: 0;
     min-height: 53px;
+}
+
+.jumpToPresentBar-G1R9s6 {
+    display: block;
+    background-color: transparent;
+}
+
+.barButtonAlt-mYL1lj {
+    float: right;
+    bottom: 35px;
+    z-index: 999;
+    background-color: var(--background-tertiary);
 }
